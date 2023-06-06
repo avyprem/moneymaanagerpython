@@ -10,7 +10,7 @@ root.geometry(600,300,300)
 root.mainloop()
 
 def saveaccountdata():
-   with open("account.txt", "a") as file:
+   with open("account.txt", "a+") as file:
         file.write(f"First Name: {first_name}\n")
         file.write(f"Last Name: {last_name}\n")
         file.write(f"Age: {age}\n")
