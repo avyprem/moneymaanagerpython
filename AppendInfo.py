@@ -1,13 +1,7 @@
-# tkinter tutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
-import csv
-import tkinter as tk
-import datetime
-root = tk.Tk()
-root.title('moneymanager')
-root.resizable(100,100)
-root.geometry(600,300,300)
-
-root.mainloop()
+# tkinter import tkinter
+import tkinter.font as tkFont
+from tkinter import ttk
+from tkinter import messageboxtutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
 
 def number():
     import csv
