@@ -22,7 +22,9 @@ def number():
         last_name = last_name_entry.get()
         age = age_spinbox.get()
         income = monthly_income.get()
-      
+   
+    current_time = datetime.datetime.now()
+    file_name = f"new_file_{current_time.strftime('%Y%m%d%H%M%S')}.txt"   
    with open("account.txt", "a+") as file:
         file.write(f"First Name: {first_name}\n")
         file.write(f"Last Name: {last_name}\n")
