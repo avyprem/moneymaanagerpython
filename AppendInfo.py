@@ -21,7 +21,7 @@ def number():
         
         
    current_time = datetime.datetime.now()
-   account = f"account_#{current_time.strftime('%Y%m%d%H%M%S')}.txt"
+   account = f"account_#{current_time.strftime('%Y%m%d%S')}.txt"
        
    with open(account,"w") as csv:
         csv.write(f"First Name: {first_name}\n")
