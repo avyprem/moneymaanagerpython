@@ -10,6 +10,8 @@ root.geometry(600,300,300)
 root.mainloop()
 
 def number():
+    import csv
+    import datetime
     # Check if income contains letters or symbols, only accepts numbers (1,2,3, etc (also accepts decimals))
     try:
         float(monthly_income.get())
@@ -22,14 +24,16 @@ def number():
         last_name = last_name_entry.get()
         age = age_spinbox.get()
         income = monthly_income.get()
-   
+        
+   current_time = datetime.datetime.now()
+   file_name = f"new_file_{current_time.strftime('%Y%m%d%H%M%S')}.txt"
        
-   with open("accountdata.txt","a+") as file:
-        file.write(f"First Name: {first_name}\n")
-        file.write(f"Last Name: {last_name}\n")
-        file.write(f"Age: {age}\n")
-        file.write(f"Monthly Income: {income}\n")
-        file.write("-----------------------------\n")
+   with open(file_name,"w") as csv:
+        csv.write(f"First Name: {first_name}\n")
+        csv.write(f"Last Name: {last_name}\n")
+        csv.write(f"Age: {age}\n")
+        csv.write(f"Monthly Income: {income}\n")
+        csv.write("-----------------------------\n")
          
  except ValueError:
     confirmation_label.config(text='not confirmed')
