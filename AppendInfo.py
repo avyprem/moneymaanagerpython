@@ -25,7 +25,7 @@ def number():
    
     current_time = datetime.datetime.now()
     file_name = f"new_file_{current_time.strftime('%Y%m%d%H%M%S')}.txt"   
-   with open("file_name.txt", "a+") as file:
+   with open(file_name,"a+") as file:
         file.write(f"First Name: {first_name}\n")
         file.write(f"Last Name: {last_name}\n")
         file.write(f"Age: {age}\n")
