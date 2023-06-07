@@ -19,13 +19,11 @@ def number():
         age = age_spinbox.get()
         income = monthly_income.get()
         
-        list1=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j',]
-        b=random.randint(0,7)
-        print(list1[b])
-   #current_time = datetime.datetime.now()
-   #file_name = f"new_file_{current_time.strftime('%Y%m%d%H%M%S')}.txt"
+        
+   current_time = datetime.datetime.now()
+   account = f"account_#{current_time.strftime('%Y%m%d%H%M%S')}.txt"
        
-   with open(list1[b],"w") as csv:
+   with open(account,"w") as csv:
         csv.write(f"First Name: {first_name}\n")
         csv.write(f"Last Name: {last_name}\n")
         csv.write(f"Age: {age}\n")
