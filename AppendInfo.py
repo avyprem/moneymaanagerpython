@@ -1,7 +1,7 @@
 # tkinter tutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
 import csv
 import tkinter as tk
-
+import datetime
 root = tk.Tk()
 root.title('moneymanager')
 root.resizable(100,100)
