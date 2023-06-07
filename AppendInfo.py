@@ -2,7 +2,7 @@
 import tkinter.font as tkFont
 from tkinter import ttk
 from tkinter import messageboxtutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
-
+#work is in lines 13-53 for merged
 def number():
     import csv
     import datetime
