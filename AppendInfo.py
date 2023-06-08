@@ -31,5 +31,6 @@ def number():
         csv.write("-----------------------------\n")
          
  except ValueError:
+    tkinter.messagebox.showwarning(title = '!WARNING!', message = 'We seemed to have detected a letter, or symbol in the text box. Please try again')
     confirmation_label.config(text='not confirmed')
 
