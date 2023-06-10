@@ -2,6 +2,8 @@
 import tkinter.font as tkFont
 from tkinter import ttk
 from tkinter import messageboxtutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
+current_time = datetime.datetime.now()
+account = f"account_#{current_time.strftime('%Y%m%d%S')}.txt"
 #work is in lines 13-53 for merged
 def number():
     import csv
@@ -18,11 +20,7 @@ def number():
         last_name = last_name_entry.get()
         age = age_spinbox.get()
         income = monthly_income.get()
-        
-        
-   current_time = datetime.datetime.now()
-   account = f"account_#{current_time.strftime('%Y%m%d%S')}.txt"
-       
+                   
    with open(account,"w") as csv:
         csv.write(f"First Name: {first_name}\n")
         csv.write(f"Last Name: {last_name}\n")
