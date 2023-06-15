@@ -1,4 +1,4 @@
-# tkinter import tkinter
+#note code does not fully function without quesstionnare part added!
 import tkinter.font as tkFont
 from tkinter import ttk
 from tkinter import messageboxtutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
