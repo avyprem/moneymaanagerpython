@@ -6,7 +6,7 @@ import csv
 import datetime
 current_time = datetime.datetime.now()
 account = f"account_#{current_time.strftime('%Y%m%d%S')}.txt"
-#work is in lines 13-53 for merged
+
 def number():
    
     # Check if income contains letters or symbols, only accepts numbers (1,2,3, etc (also accepts decimals))
