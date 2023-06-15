@@ -24,12 +24,12 @@ def number():
         income = monthly_income.get()
 
 #Opens the real time .txt file and writes data to file
-   with open(account,"w") as csv:
-        csv.write(f"First Name: {first_name}\n")
-        csv.write(f"Last Name: {last_name}\n")
-        csv.write(f"Age: {age}\n")
-        csv.write(f"Monthly Income: {income}\n")
-        csv.write("-----------------------------\n")
+         with open(account,"w") as csv:
+              csv.write(f"First Name: {first_name}\n")
+              csv.write(f"Last Name: {last_name}\n")
+              csv.write(f"Age: {age}\n")
+              csv.write(f"Monthly Income: {income}\n")
+              csv.write("-----------------------------\n")
          
  except ValueError:
     tkinter.messagebox.showwarning(title = '!WARNING!', message = 'We seemed to have detected a letter, or symbol in the text box. Please try again')
