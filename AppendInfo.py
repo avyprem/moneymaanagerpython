@@ -1,9 +1,10 @@
-# tkinter import tkinter
+#note code does not fully function without the questionnaire code added!
 import tkinter.font as tkFont
 from tkinter import ttk
 from tkinter import messageboxtutorial https://www.pythontutorial.net/tkinter/tkinter-hello-world/
 import csv
 import datetime
+#Uses current real time information to open up a new .txt file
 current_time = datetime.datetime.now()
 account = f"account_#{current_time.strftime('%Y%m%d%S')}.txt"
 
@@ -21,7 +22,8 @@ def number():
         last_name = last_name_entry.get()
         age = age_spinbox.get()
         income = monthly_income.get()
-                   
+
+#Opens the real time .txt file and writes data to file
    with open(account,"w") as csv:
         csv.write(f"First Name: {first_name}\n")
         csv.write(f"Last Name: {last_name}\n")
