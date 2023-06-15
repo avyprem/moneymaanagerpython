@@ -9,7 +9,7 @@ current_time = datetime.datetime.now()
 account = f"account_#{current_time.strftime('%Y%m%d%S')}.txt"
 
 def number():
-   
+   import csv
     # Check if income contains letters or symbols, only accepts numbers (1,2,3, etc (also accepts decimals))
     try:
         float(monthly_income.get())
